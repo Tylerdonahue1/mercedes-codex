@@ -1,0 +1,8 @@
+node_modules/**
+docs/**
+templates/**
+test/**
+README.md
+package.json
+package-lock.json
+

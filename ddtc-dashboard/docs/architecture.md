@@ -1,0 +1,27 @@
+# Architecture
+
+The DDTC Dashboard system uses one Apps Script project managed by clasp. DDC workbooks are the source of truth for consultant-entered data, and the Program Manager Dashboard is the aggregated reporting surface.
+
+## Data Flow
+
+1. DDCs update their assigned workbooks.
+2. `runDailySync` or `syncNow` starts the aggregator.
+3. The aggregator reads workbook IDs from the registry.
+4. Each workbook is processed in batches with continuation state.
+5. Pure reader modules return structured data.
+6. `PMDashboard.gs` writes consolidated rows and recomputes summaries.
+7. `Logger.gs` writes sync status and workbook-level errors.
+
+## Module Boundaries
+
+- `Main.gs`: dispatch only.
+- `Aggregator.gs`: batching, continuation, and orchestration.
+- `WorkbookRegistry.gs`: registry reads.
+- `DealerProfile.gs`, `ContactReport.gs`, `Assessments.gs`: workbook reads only.
+- `PMDashboard.gs`: dashboard writes only.
+- `PDFGenerator.gs`: Docs template copy, token replacement, and PDF export.
+- `Provisioning.gs`: one-time workbook creation and sharing.
+- `Triggers.gs`: trigger install and removal.
+- `Logger.gs`: operational logs.
+- `Utils.gs`: shared helper functions.
+

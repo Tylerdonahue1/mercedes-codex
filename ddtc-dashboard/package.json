@@ -1,0 +1,19 @@
+{
+  "name": "ddtc-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node -e \"const fs=require('fs'); JSON.parse(fs.readFileSync('appsscript.json','utf8')); ['Config','Main','Aggregator','WorkbookRegistry','DealerProfile','ContactReport','Assessments','PMDashboard','PDFGenerator','Provisioning','Triggers','Logger','Utils'].forEach((name)=>{ if(!fs.existsSync('src/'+name+'.gs')) throw new Error('Missing src/'+name+'.gs'); }); console.log('sanity checks passed');\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^3.3.0"
+  }
+}
