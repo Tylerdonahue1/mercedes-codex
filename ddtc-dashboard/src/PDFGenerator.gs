@@ -77,7 +77,7 @@ function buildContactReportFileName_(dealerProfile, contactReport) {
   const meetingDate = contactReport.current_meeting_date
     ? Utilities.formatDate(new Date(contactReport.current_meeting_date), Session.getScriptTimeZone(), 'yyyy-MM-dd')
     : Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy-MM-dd');
-  return `${dealerName} Contact Report ${meetingDate}`.replace(/[\\/:*?"<>|]/g, '-');
+  return `${CONFIG.ASSET_NAME_PREFIX} - ${dealerName} Contact Report ${meetingDate}`.replace(/[\\/:*?"<>|]/g, '-');
 }
 
 /**

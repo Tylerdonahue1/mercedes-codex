@@ -1,6 +1,6 @@
 # PM Dashboard Template Notes
 
-Create one Google Sheets workbook template with these tabs:
+Create one Google Sheets workbook template named `DDTC Dashboard - Codex - PM Dashboard Template` with these tabs:
 
 1. `Consolidated Dealer Profiles & Activity`
 2. `Meeting Schedule Overview`
@@ -27,4 +27,3 @@ Create one Google Sheets workbook template with these tabs:
 ## Sync Log
 
 - Add columns for timestamp, run ID, status, processed count, error count, duration, cursor, and message.
-

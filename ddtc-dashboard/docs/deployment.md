@@ -11,3 +11,10 @@
 9. Run `syncNow` again.
 10. Confirm all 47 dealerships appear in PM Dashboard.
 
+## Asset Naming
+
+Codex-generated assets should use the prefix `DDTC Dashboard - Codex`.
+
+- Apps Script project: `DDTC Dashboard - Codex`
+- DDC workbook copies: `DDTC Dashboard - Codex - DDC Workbook - <DDC Name>`
+- Contact Report PDFs: `DDTC Dashboard - Codex - <Dealer Name> Contact Report <Date>`

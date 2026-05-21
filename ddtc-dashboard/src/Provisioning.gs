@@ -16,7 +16,7 @@ function provisionDdcWorkbook(ddcName, ddcEmail, pmViewerEmails, dealerRows) {
   }
 
   const templateFile = DriveApp.getFileById(CONFIG.DDC_TEMPLATE_ID);
-  const workbookFile = templateFile.makeCopy(`DDTC - ${ddcName}`);
+  const workbookFile = templateFile.makeCopy(`${CONFIG.ASSET_NAME_PREFIX} - DDC Workbook - ${ddcName}`);
   workbookFile.addEditor(ddcEmail);
   (pmViewerEmails || []).forEach((email) => workbookFile.addViewer(email));
 

@@ -1,6 +1,8 @@
-# Mercedes DDTC Dashboard
+# Mercedes DDTC Dashboard - Codex
 
 This workspace contains the build brief, implementation plan, and clasp-managed Apps Script project for the Mercedes-Benz USA DDTC dashboard.
+
+This builder tags generated assets with `DDTC Dashboard - Codex` to keep them distinct from other parallel builder outputs.
 
 ## Contents
 
@@ -47,4 +49,3 @@ If using an HTTPS remote:
 git remote add origin https://github.com/OWNER/REPO.git
 git push -u origin main
 ```
-

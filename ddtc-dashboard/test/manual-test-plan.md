@@ -6,6 +6,7 @@
 
 ## Templates
 
+- Confirm Codex-created assets use the `DDTC Dashboard - Codex` prefix.
 - Confirm DDC workbook has five required tabs.
 - Confirm Dealer Profile protected ranges cannot be edited by DDC users.
 - Confirm named ranges match `docs/data-schema.md`.

@@ -1,6 +1,6 @@
 # DDC Workbook Template Notes
 
-Create one Google Sheets workbook template with these tabs:
+Create one Google Sheets workbook template named `DDTC Dashboard - Codex - DDC Workbook Template` with these tabs:
 
 1. `Dealer Profile`
 2. `Contact Report / Action Plan`
@@ -37,4 +37,3 @@ Create one Google Sheets workbook template with these tabs:
 
 - Add placeholder fields from `IN_STORE_ASSESSMENT_FIELDS` in `Config.gs`.
 - Use one named range per field key.
-

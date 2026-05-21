@@ -2,6 +2,9 @@
  * Project-wide constants for DDTC Dashboard.
  */
 const CONFIG = {
+  PROJECT_NAME: 'DDTC Dashboard',
+  BUILDER_TAG: 'Codex',
+  ASSET_NAME_PREFIX: 'DDTC Dashboard - Codex',
   PM_DASHBOARD_ID: '',
   DEALER_REGISTRY_SHEET_ID: '',
   DDC_TEMPLATE_ID: '',

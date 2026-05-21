@@ -121,7 +121,7 @@ Expected: browser login succeeds and clasp can access Google Apps Script.
 
 ```bash
 cd /Users/mac-mini/Mercedes-Codex/ddtc-dashboard
-npx clasp create --type standalone --title "DDTC Dashboard"
+npx clasp create --type standalone --title "DDTC Dashboard - Codex"
 ```
 
 Expected: `.clasp.json` is created with the script ID.
@@ -253,7 +253,7 @@ Write `/Users/mac-mini/Mercedes-Codex/ddtc-dashboard/src/Config.gs`:
 
 ```javascript
 /**
- * Project-wide constants for DDTC Dashboard.
+ * Project-wide constants for DDTC Dashboard - Codex.
  */
 const CONFIG = {
   PM_DASHBOARD_ID: '',
@@ -679,4 +679,3 @@ Expected: no blocking sync errors, PDFs are accepted by PM, and any template cha
 - Manual Google UI work is documented instead of hidden in memory.
 - The system has one daily trigger and one on-demand sync path.
 - Pilot happens before full 47-dealer rollout.
-

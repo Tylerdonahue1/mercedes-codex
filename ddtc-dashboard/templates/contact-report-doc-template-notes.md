@@ -1,6 +1,6 @@
 # Contact Report Docs Template Notes
 
-Create one Google Docs template for branded Contact Report PDFs.
+Create one Google Docs template for branded Contact Report PDFs. Name the template `DDTC Dashboard - Codex - Contact Report Template`.
 
 ## Supported Tokens
 
@@ -26,4 +26,3 @@ Create one Google Docs template for branded Contact Report PDFs.
 - Use brand-approved header, footer, logo, type, and spacing in Google Docs.
 - Keep all dynamic values as `{{token}}` placeholders.
 - Do not include internal notes, internal risks, or internal followups.
-

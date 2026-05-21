@@ -8,8 +8,8 @@
  */
 function onOpen() {
   SpreadsheetApp.getUi()
-    .createMenu('DDTC')
-    .addItem('Generate Contact Report PDF', 'generateContactReportPdfForActiveWorkbook')
+    .createMenu(`${CONFIG.PROJECT_NAME} (${CONFIG.BUILDER_TAG})`)
+    .addItem('Generate Codex Contact Report PDF', 'generateContactReportPdfForActiveWorkbook')
     .addToUi();
 }
 
